@@ -27,8 +27,7 @@ while run:
                 for j in range (28):
                     for i in range(28):
                         colourin = screen.get_at(((i * 10) + 5, (j * 10) + 5))
-                        realcolour = (colourin[0] / 255)
-                        input.append(realcolour)
+                        input.append(colourin[0])
                 run = False            
     if drawing:
         mouse_position = pygame.mouse.get_pos()
